@@ -1,14 +1,14 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
-import Discussion from "./Discussion";
-import Market from "./Market";
+import React, { useState } from "react"
+import Discussion from "./Discussion"
+import Market from "./Market"
 
 const MobileLayout = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(false)
   const handleClick = () => {
-    setShow(!show);
-  };
+    setShow(!show)
+  }
   return (
     <>
       <div className="flex  w-full  items-center mb-1">
@@ -29,9 +29,9 @@ const MobileLayout = () => {
           Market stories
         </button>
       </div>
-      {show ? <Market /> : <Discussion />}
+      <div className="flex flex-col">{show ? <Market /> : <Discussion />}</div>
     </>
-  );
-};
+  )
+}
 
-export default MobileLayout;
+export default MobileLayout

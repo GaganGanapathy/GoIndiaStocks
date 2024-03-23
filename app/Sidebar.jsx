@@ -8,7 +8,7 @@ export default function Sidebar() {
     <div
       className={`absolute lg:relative h-full lg:h-auto ${
         sidebar ? "w-1/2 lg:w-1/4 p-2" : "w-0"
-      } z-30 bg-blue-600 sidebar duration-300 `}
+      } z-30 bg-blue-600  duration-300 `}
     >
       {/* Open && close sidebar button */}
       <div

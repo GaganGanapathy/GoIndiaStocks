@@ -1,10 +1,10 @@
-import React from "react";
-import Image from "next/image";
-import { market } from "../data";
+import React from "react"
+import Image from "next/image"
+import { market } from "../data"
 
 export default function Market() {
   return (
-    <div className="flex  flex-col justify-around gap-y-2">
+    <div className="flex h-full flex-col justify-around gap-y-2">
       {market.map((item, index) => (
         <div className="card shadow-md flex flex-col  mx-2" key={index}>
           {/* Image */}
@@ -25,5 +25,5 @@ export default function Market() {
         </div>
       ))}
     </div>
-  );
+  )
 }
