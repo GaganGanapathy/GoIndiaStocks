@@ -1,12 +1,12 @@
-"use client";
+"use client"
 
-import React, { useState } from "react";
+import React, { useState } from "react"
 
 export default function Sidebar() {
-  const [sidebar, setSidebar] = useState(false);
+  const [sidebar, setSidebar] = useState(false)
   return (
     <div
-      className={`absolute lg:relative h-auto ${
+      className={`absolute lg:relative h-full lg:h-auto ${
         sidebar ? "w-1/2 lg:w-1/4 p-2" : "w-0"
       } z-30 bg-blue-600 sidebar duration-300 `}
     >
@@ -172,5 +172,5 @@ export default function Sidebar() {
         </div>
       )}
     </div>
-  );
+  )
 }
